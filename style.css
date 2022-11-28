@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.container-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem auto;
+    background-color: rgb(36, 36, 36);
+    width: 35%;
+    border-radius: 2rem;
+    padding: 3rem 3rem 3rem 3rem;
+    border: 0.3rem solid beige;
+}
+h1,h2,p{
+    margin: 1rem auto;
+    border-bottom: 0.3rem solid green;
+    color: beige;
+}
+label{
+    border-bottom: 0.3rem solid green;
+    color: beige;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+input{
+    background-color: rgb(68, 67, 67);
+    color: beige;
+}
+input, button{
+    display: block;
+    padding: 0.9rem;
+    margin-bottom: 0.3rem;
+    width: 100%;
+    border-radius: 0.6rem;
+}
+
+button{
+    background: green;
+    color: beige;
+    font-size: 1.3rem;
+    border: 0.1rem solid beige;
+}
+
+button:hover{
+    background: beige;
+    color: green;
+    font-size: 1.3rem;
+    border: 0.1rem solid green;
+    cursor: pointer;
+}
+
+#message{
+    display: none;
+}
