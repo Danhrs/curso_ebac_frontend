@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    padding: 1.5rem;
+    align-items: center;
+    background-color: rgb(159, 6, 6);
+    color: beige;
+    margin-bottom: 3em;
+}
+
+h1{
+    border-bottom: 3px solid beige;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+}
+header ul li{
+    list-style: none;
+    padding: 7px 3px;
+    margin: 7px;
+    cursor: pointer;
+}
+
+img{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.sobre-loja{
+    margin-bottom: 1rem;
+    padding: 2rem;
+    background-color: rgb(223, 223, 223);
+    border-radius: 13px;
+    display: flex;
+}
+
+.texto{
+    width: 100%;
+    margin: 14px;
+    padding: 1rem;
+}
+
+.sobre-loja .texto h2{
+    margin-bottom: 24px;
+    padding: 7px;
+    color: rgb(159, 6, 6);
+    border-bottom: 3px solid rgb(159, 6, 6);
+}
+
+section{
+    padding: 24px;
+}
+section h2{
+    margin-bottom: 24px;
+    color: rgb(159, 6, 6);
+    border-bottom: 3px solid rgb(159,6,6);
+}
+
+.produto{
+    display: flex;
+}
+
+.lista-produtos{
+    flex-wrap: wrap;
+
+}
+.lista-produtos li{
+    list-style: none;
+    max-width: 23%;
+    margin: 8px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 12px;
+    padding: 1rem;
+}
+.lista-produtos li img{
+    max-width: 100%;
+    border-radius: 16px;
+}
+
+.lista-produtos li h3{
+    margin: 16px 0;
+    border-bottom: 2px solid black;
+
+}
+
+.lista-produtos li button{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(159, 6, 6);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.lista-produtos li button:hover{
+    box-shadow: 2px 2px 2px 1px rgba(159, 6, 6, 0.5);
+    transition: 0.5s;
+}
+
+.item-central{
+    margin: 0 5%;
+}
+
+.price{
+    display: block;
+    margin: 16px 0;
+}
+/* Tela de tablet */
+
+@media screen and ( min-width: 641px) and (max-width:1023px){
+    .container{
+        max-width: 90%;
+    }
+    .sobre-loja{
+        display: flex;
+        flex-direction: column;
+    }
+    .sobre-loja img{
+        max-width: 100%;
+        align-items: center;
+    }
+    .sobre-loja img{
+        max-width: 100%;
+    }
+    .produto{
+        display: block;
+    }
+    .lista-produtos li{
+        max-width: 47%;
+    }
+    
+}
+@media screen and (max-width:640px){
+
+    header .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    header h1{
+        display: block;
+    }
+    ul{
+        display: block;
+    }
+    main{
+        display: block;
+    }
+    
+    .container{
+        max-width: 90%;
+    }
+
+    .sobre-loja{
+        display: block;
+    }
+    
+    .texto{
+        width: 100%;
+        margin: 14px;
+        padding: 1rem;
+    }
+
+
+    .sobre-loja img{
+        max-width: 100%;
+    }
+    .produto{
+        display: block;
+    }
+    .lista-produtos li{
+        max-width: 100%;
+    }
+}
